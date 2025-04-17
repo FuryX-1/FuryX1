@@ -1,0 +1,165 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ملفي الشخصي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(to right, #1e3a8a, #9333ea);
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header img {
+      height: 100px;
+      margin-bottom: 15px;
+    }
+    header p {
+      color: #cbd5e1;
+      font-size: 1.2rem;
+    }
+    nav {
+      background-color: #1e293b;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #f8fafc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #60a5fa;
+    }
+    .section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    .card {
+      background-color: #1e293b;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .download-btn {
+      display: inline-block;
+      background-color: #3b82f6;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background-color: #2563eb;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      background: #0f172a;
+      color: #94a3b8;
+      border-top: 1px solid #1e293b;
+    }
+  </style>
+</head>
+<body>
+
+<header data-aos="fade-down">
+  <img src="The logo.png" alt="شعار الموقع" />
+  <p>يونس - FuryX | فيديو أديتور محترف</p>
+  <a class="download-btn" href="cv.pdf" target="_blank">تحميل السيرة الذاتية</a>
+</header>
+
+<nav>
+  <a href="#about">عنّي</a>
+  <a href="#skills">المهارات</a>
+  <a href="#projects">المشاريع</a>
+  <a href="#contact">تواصل</a>
+</nav>
+
+<section id="about" class="section" data-aos="fade-up">
+  <div class="card">
+    <h2>من أنا؟</h2>
+    <p>أنا يونس، أو كما يعرفني البعض بـ FURY. محرر فيديو محترف أشتغل ببرنامج Adobe Premiere Pro منذ أكثر من عامين، أتمتع بذوق بصري عالي، وسرعة في المونتاج، وإبداع في تحويل أي فكرة بسيطة إلى فيديو احترافي يلفت الأنظار. أتمنى أن أكون ضمن فريقك القادم!
+
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="section" data-aos="fade-up">
+  <div class="card">
+    <h2>المهارات</h2>
+    <ul>
+      <li>Adobe Premiere Pro (احترافي)      </li>
+      <li>Adobe Photoshop (جيد جداً)     </li>
+      <li>تعديل الألوان، المونتاج الإيقاعي، المؤثرات البصرية البسيطة      </li>
+      <li>العمل تحت الضغط والتسليم في الوقت المحدد      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects" class="section" data-aos="fade-up">
+  <div class="card">
+    <h2>المشاريع</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3><a href="https://drive.google.com/file/d/13wL_TQa70CzBXNJnE8nzVdNMpU1q_B4S/view?usp=drive_link" target="_blank" style="color: #93c5fd;">مشروع فيديو توعوي حول المخدرات</a></h3>
+        <p>فيديو توعوي حول المخدرات ,بطريقة ممتعة تترك المشاهد منجذب مع الفيديو</p>
+      </div>
+</section>
+
+<section id="contact" class="section" data-aos="fade-up">
+  <div class="card">
+    <!-- تواصل معي -->
+<section id="contact" style="background-color: #1e293b; padding: 40px; text-align: center; font-family: 'Cairo', sans-serif;">
+  <h2 style="color: #ffffff; font-size: 2rem;">تواصل معي</h2>
+  <p style="margin: 10px 0; font-size: 1.1rem;">
+    📧 <a href="mailto:FuryXrog@email.com" style="color: #db0808; text-decoration: none;">راسلني عبر البريد الإلكتروني</a>
+  </p>
+  <p style="margin: 10px 0; font-size: 1.1rem;">
+    📞 <a href="tel:+213676250054" style="color: #ffffff; text-decoration: none;">اتصل بي مباشرة</a>
+  </p>
+  <p style="margin: 10px 0; font-size: 1.1rem;">
+    💬 <a href="https://wa.me/213676250054" target="_blank" style="color: #18b60a; text-decoration: none;">تحدث معي عبر واتساب</a>
+  </p>
+</section>
+
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 جميع الحقوق محفوظة.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
+</body>
+</html>
